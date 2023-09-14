@@ -17,7 +17,6 @@ body {
 
 nav {
     border-bottom: 0.5px solid;
-
     color: rgba(255, 255, 255, 0.158);
     width: 100%;
     height: 40px;
@@ -36,6 +35,7 @@ nav {
     color: white;
 }
 
+
 ul {
     margin: 0;
     padding: 0;
@@ -46,10 +46,10 @@ ul {
     height: 100%;
 }
 
+
 button {
     background-color: black;
     border-style: none;
-
 }
 
 .box {
@@ -62,20 +62,10 @@ button {
     position: absolute;
     z-index: -1;
 }
-
-
-
-
-
-
-#première section,h2,p{
-
-   
-        display: flex;
-        align-items: center;
-        justify-content: right;
-        /* Centre les blocs verticalement *
-  /* Force les éléments à s'aligner horizontalement sur une ligne */
-  flex-wrap: nowrap;
-  /* Empêche le retour à la ligne */
+#block1 h2, #block1 p {
+    display: flex;
+    flex-direction: column; /* Pour empiler verticalement h2 et p */
+    align-items: flex-end; /* Aligne les éléments à droite */
+    justify-content: center; /* Centre verticalement les éléments */
 }
+
